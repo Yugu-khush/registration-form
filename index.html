@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <style>
+    form{
+        width: 50%;
+        margin: 20vh auto;
+        background-color: rgba(0,0,255,0.4);
+        padding: 10px;
+        color: #fff;
+        border-radius: 10px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        transition: all 2s 0s ease;
+    }
+    form label,input{
+        display: block;
+        margin: 10px;
+        background-color: transparent;
+        padding: 5px;
+    }
+    form input{
+        outline: none;
+        border: 2px solid #fff;
+    }
+    form button{
+        border: none;
+        padding: 5px;
+        width: 100px;
+        background-color: blueviolet;
+        color: #fff;
+        margin: 0px 50px;
+        cursor: pointer;
+    }
+    input[type="radio"]{
+        display: inline;
+    }
+    select{
+        margin: 10px;
+        border: 2px solid#fff;
+        color:#fff;
+        background: transparent;
+        padding: 5px;
+    }
+    select optgroup,option{
+        color: #777;
+    }
+    textarea{
+        resize: none;
+    }
+    input[type="checkbox"]{
+        display: inline;
+    }
+ </style>
+</head>
+<body>
+    <form action="">
+        <h2>Registration Form</h2>
+        <input type="text" placeholder="Enter Your Username" name="username" id="">
+        <input type="password" placeholder="Enter Your Password" name="password" id="">
+        <label for="">Gender :</label>
+        Male:<input type="radio" name="gender" id="">
+        Female:<input type="radio" name="gender" id="">
+        <select name="" id="">
+            <option value="">Choose Course</option>
+            <optgroup label="Digital Marketing">
+                <option value="">Front End</option>
+                <option value="">SEO</option>
+                <option value="">Google Ads</option>
+                <option value="">Email Marketing</option>
+                <option value="">Wordpress</option>            
+            </optgroup>
+            <optgroup label="Data Analysist">
+                <option value="">Python</option>
+                <option value="">Baisc Advance Excel</option>
+                <option value="">SQL</option>
+                <option value="">Power BI</option>
+            </optgroup>            
+        </select>
+
+        <textarea name="" cols="21" placeholder="Enter Message" rows="4"></textarea>
+        <label for="">Choose Your Preference</label>
+        <input type="checkbox" name="Choose Your Preference"
+        value="Upper Birth" id="">Upper Birth
+        <input type="checkbox" name="Choose Your Preference"
+        value="Middle Birth" id="">Middle Birth
+        <input type="checkbox" name="Choose Your Preference"
+        value="Lower Birth" id="">Lower Birth
+
+        <button type="submit">Submit</button>
+
+        <h1>Enter Your Email</h1>
+        <input type="text" placeholder="Yahoo.com" name="Gmail" id="">
+        <input type="text" placeholder="Google.com" name="Gmail" id="">
+        <input type="text" placeholder="Bing.com" name="Gmail" id="">
+        <label for="">Mail</label>
+        Gmail:<input type="checkbox" name="mail" id="">
+        Yahoo:<input type="checkbox" name="mail" id="">
+        Bing:<input type="checkbox" name="mail" id="">
+    </form>
+</body>
+</html>
