@@ -1,2 +1,2 @@
-# clothing-store
-clothing store on wordpress
+
+registration form for basic details of a person
